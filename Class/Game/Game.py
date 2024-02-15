@@ -1,7 +1,7 @@
 from Pokemon import Pokemon  # Pokemon class
 from Combat import Combat  # Combat class
 from Player import Player  # Player class
-from Settings import *  # Settings class
+from Settings import *  # Settings clas
 
 
 class Game:
@@ -42,21 +42,21 @@ class Game:
         self.game_state = "combat"
 
     # Debug function (for testing) don't forget to remove it before release #
-    def Debug(self):
+    # def Debug(self):
 
-        print("Debug")
+    #     print("Debug")
 
-        # Debug Add pokemon
-        self.Player.add_pokemons(Pokemon(self, 4, self.GENERATE.generate_IV(), 20, self.GENERATE.generate_nature(), 5, [1, 3, 39], False))
-        self.Player.get_pokemons()[0].set_exp(25)
-        # self.Player.add_pokemons(Pokemon(self, 5, self.GENERATE.generate_IV(), 1, self.GENERATE.generate_nature(), 1, [1, 3, 6, 4], True))
+    #     # Debug Add pokemon
+    #     self.Player.add_pokemons(Pokemon(self, 4, self.GENERATE.generate_IV(), 20, self.GENERATE.generate_nature(), 5, [1, 3, 39], False))
+    #     self.Player.get_pokemons()[0].set_exp(25)
+    #     # self.Player.add_pokemons(Pokemon(self, 5, self.GENERATE.generate_IV(), 1, self.GENERATE.generate_nature(), 1, [1, 3, 6, 4], True))
 
-        # Debug Level up pokemon
-        # for i in range(1, 10):
-        #     self.Player.get_pokemons()[0].level_up()
+    #     # Debug Level up pokemon
+    #     # for i in range(1, 10):
+    #     #     self.Player.get_pokemons()[0].level_up()
 
-        # Debug Combat
-        self.start_combat(self.Player.get_pokemons(), Pokemon(self, 1, self.GENERATE.generate_IV(), 1, self.GENERATE.generate_nature(), 5, [1], False))
+    #     # Debug Combat
+    #     self.start_combat(self.Player.get_pokemons(), Pokemon(self, 1, self.GENERATE.generate_IV(), 1, self.GENERATE.generate_nature(), 5, [1], False))
 
     # Pygame Draw function #
     def draw(self):

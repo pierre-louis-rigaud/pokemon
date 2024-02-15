@@ -60,7 +60,7 @@ class Combat:
             return math.floor(((((((2 * lvl / 5) + 2) * attack_spe * power / enemy_sp_defence) / 50 + 2) * effectiveness) * random.randint(217, 255)) / 255)  # special attack
         else:
             return 0
-            # TODO: STATUS ATTACK (ex: poison, sleep, etc...)
+            
 
     # TURN METHOD (manage the turn)
     def turn(self, move_choice=0):  # move_choice(1=attack, 2=switch, 3=bag | default(enemy_turn)=0)

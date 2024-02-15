@@ -11,8 +11,8 @@ class Pokemon:
         # THEY ARE NOT USED IN COMBAT #
 
         self.__ID = pokemon_id - 1  # id of the pokemon (ex: 25 [for Pikachu])
-        self.__NAME = self.__GAME.SETTINGS.pokedex[self.__ID]["name"][self.__GAME.SETTINGS.language]  # name of the pokemon  (ex: "Pikachu")
-        self.__TYPE = self.__GAME.SETTINGS.pokedex[self.__ID]["type"]  # type of the pokemon (ex: ["Fire", "Flying"])
+        self.__NAME = self.__GAME.SETTINGS.pokedex[self.__ID]["name"][self.__GAME.SETTINGS.language]  # name of the pokemon  
+        self.__TYPE = self.__GAME.SETTINGS.pokedex[self.__ID]["type"]  # type of the pokemon 
         self.__MAX_HP = self.__GAME.SETTINGS.pokedex[self.__ID]["base"]["HP"]  # max hp of the pokemon (ex: 35)
         self.__ATTACK = self.__GAME.SETTINGS.pokedex[self.__ID]["base"]["Attack"]  # attack of the pokemon (ex: 55)
         self.__DEFENSE = self.__GAME.SETTINGS.pokedex[self.__ID]["base"]["Defense"]  # defense of the pokemon (ex: 40)
